@@ -1,4 +1,4 @@
-// Buat file tugas.html
+// BUAT FILE tugas.html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -81,7 +81,7 @@
 </html>
 
 
-// Buat file style.css
+// BUAT FILE style.css
 :root {
     --purple-color: #7F467C;
     --bg-color:  #A2A9AC;
