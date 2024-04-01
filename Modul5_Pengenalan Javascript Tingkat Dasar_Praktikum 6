@@ -1,0 +1,481 @@
+// BUAT FILE helloword.html
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML -->
+<html lang="en"> <!-- Mulai elemen HTML, dengan atribut bahasa "en" (Inggris) -->
+<head>
+    <meta charset="UTF-8"> <!-- Deklarasi karakter set UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan tampilan untuk perangkat seluler -->
+    <title>Belajar JavaScript panulisan dasar</title> <!-- Judul halaman web -->
+</head>
+<body> <!-- Mulai bagian tubuh dokumen HTML -->
+    <div id="title"></div> <!-- Elemen div dengan atribut id "title" -->
+    <script>
+        document.getElementById("title").innerHTML = "HAI KAWAN"; <!-- Skrip JavaScript untuk mengubah konten div -->
+    </script> <!-- Penutup skrip JavaScript -->
+</body> <!-- Penutup bagian tubuh dokumen HTML -->
+</html> <!-- Penutup elemen HTML -->
+
+
+
+// BUAT FILE inline_js.html
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML -->
+<html lang="en"> <!-- Mulai elemen HTML, dengan atribut bahasa "en" (Inggris) -->
+<head>
+    <meta charset="UTF-8"> <!-- Deklarasi karakter set UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan tampilan untuk perangkat seluler -->
+    <title>Document</title> <!-- Judul halaman web -->
+</head>
+<body> <!-- Mulai bagian tubuh dokumen HTML -->
+    <button onclick="document.getElementById('title').innerHTML = 'LHAA MUNCUL'">Tekan ini! </button> <!-- Tombol yang mengubah konten h1 saat diklik -->
+    <h1 id="title"></h1> <!-- Elemen h1 dengan atribut id "title" -->
+</body> <!-- Penutup bagian tubuh dokumen HTML -->
+</html> <!-- Penutup elemen HTML -->
+
+
+
+
+
+// BUAT FILE internal_js.html
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML -->
+<html lang="en"> <!-- Mulai elemen HTML, dengan atribut bahasa "en" (Inggris) -->
+<head>
+    <meta charset="UTF-8"> <!-- Deklarasi karakter set UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan tampilan untuk perangkat seluler -->
+    <title>Belajar JavaScript Event Listener</title> <!-- Judul halaman web -->
+</head>
+<body> <!-- Mulai bagian tubuh dokumen HTML -->
+    <button id="button">Klik ini bangggg </button> <!-- Tombol dengan atribut id "button" -->
+    <h1 id="title"></h1> <!-- Elemen h1 dengan atribut id "title" -->
+    <script>
+        document.getElementById("button").addEventListener("click", ()=>{ <!-- Skrip JavaScript untuk menambahkan event listener ke tombol -->
+            document.getElementById("title").innerText = "HAHAHAHAHAHA "; 
+        })
+    </script> 
+</body> <!-- Penutup bagian tubuh dokumen HTML -->
+</html> <!-- Penutup elemen HTML -->
+
+
+
+
+
+
+//BUAT FILE external.html
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML -->
+<html lang="en"> <!-- Mulai elemen HTML, dengan atribut bahasa "en" (Inggris) -->
+<head>
+    <meta charset="UTF-8"> <!-- Deklarasi karakter set UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan tampilan untuk perangkat seluler -->
+    <title>Belajar JavaScript Event Listener</title> <!-- Judul halaman web -->
+</head>
+<body> <!-- Mulai bagian tubuh dokumen HTML -->
+    <button id="button">Klik ini bangggg </button> <!-- Tombol dengan atribut id "button" -->
+    <h1 id="title"></h1> <!-- Elemen h1 dengan atribut id "title" -->
+    <script>
+        document.getElementById("button").addEventListener("click", ()=>{ <!-- Skrip JavaScript untuk menambahkan event listener ke tombol -->
+            document.getElementById("title").innerText = "HAHAHAHAHAHA "; 
+        })
+    </script> 
+</body> <!-- Penutup bagian tubuh dokumen HTML -->
+</html> <!-- Penutup elemen HTML -->
+
+
+
+
+
+
+//BUAT FILE defer_js.html
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML -->
+<html lang="en"> <!-- Mulai elemen HTML, dengan atribut bahasa "en" (Inggris) -->
+<head>
+    <meta charset="UTF-8"> <!-- Deklarasi karakter set UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan tampilan untuk perangkat seluler -->
+    <title>Document</title> <!-- Judul halaman web -->
+    <script src="script1.js" defer></script> <!-- Menautkan file skrip JavaScript eksternal dengan atribut defer -->
+</head>
+<body> <!-- Mulai bagian tubuh dokumen HTML -->
+    <button id="button">TEKAN BWOLOKU</button> <!-- Tombol dengan atribut id "button" -->
+    <h1 id="title"></h1> <!-- Elemen h1 dengan atribut id "title" -->
+</body> <!-- Penutup bagian tubuh dokumen HTML -->
+</html> <!-- Penutup elemen HTML -->
+
+
+
+
+
+
+
+//BUAT FILE no_scritp_js.html
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML -->
+<html lang="en"> <!-- Mulai elemen HTML, dengan atribut bahasa "en" (Inggris) -->
+<head>
+    <meta charset="UTF-8"> <!-- Deklarasi karakter set UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan tampilan untuk perangkat seluler -->
+    <title>Document</title> <!-- Judul halaman web -->
+    <script src="script1.js"></script> <!-- Menautkan file skrip JavaScript eksternal -->
+</head>
+<body> <!-- Mulai bagian tubuh dokumen HTML -->
+    <button id="button">JANGAN DITEKAN</button> <!-- Tombol dengan atribut id "button" -->
+    <h1 id="title"></h1> <!-- Elemen h1 dengan atribut id "title" -->
+    <noscript>
+        WADUHHH <!-- Isi alternatif yang ditampilkan jika JavaScript dinonaktifkan pada browser -->
+    </noscript>
+</body> <!-- Penutup bagian tubuh dokumen HTML -->
+</html> <!-- Penutup elemen HTML -->
+
+
+
+
+
+
+
+
+
+// BUAT FILE variables.html
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML -->
+<html lang="en"> <!-- Mulai elemen HTML, dengan atribut bahasa "en" (Inggris) -->
+<head>
+    <meta charset="UTF-8"> <!-- Deklarasi karakter set UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan tampilan untuk perangkat seluler -->
+    <title>Document</title> <!-- Judul halaman web -->
+</head>
+<body> <!-- Mulai bagian tubuh dokumen HTML -->
+    <h1>Belajar JavaScript Variable</h1> <!-- Elemen h1 -->
+    <script>
+        let nama = "value"; 
+        console.log(nama); 
+        nama = "ijaz shafarin"; 
+        console.log(nama); 
+        const Pi = 3.14; 
+        console.log(Pi); 
+         Pi = 4.1; 
+         console.log(Pi); 
+    </script> <!-- Penutup skrip JavaScript -->
+</body> <!-- Penutup bagian tubuh dokumen HTML -->
+</html> <!-- Penutup elemen HTML -->
+
+
+
+
+
+
+
+
+//BUAT FILE DataType.html
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML -->
+<html lang="en"> <!-- Mulai elemen HTML, dengan atribut bahasa "en" (Inggris) -->
+<head>
+    <meta charset="UTF-8"> <!-- Deklarasi karakter set UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan tampilan untuk perangkat seluler -->
+    <title>Document</title> <!-- Judul halaman web -->
+</head>
+<body> <!-- Mulai bagian tubuh dokumen HTML -->
+    <h1> Belajar JavaScript Tipe Data</h1> <!-- Elemen h1 -->
+    <script>
+        //num
+        let num = 90; <!-- Mendefinisikan variabel num dengan nilai 90 -->
+        let decimal = 0.2; 
+        let minus = -99999999999999999999999999999999999999999999999999999999999999999; 
+        console.log(num); 
+        console.log(decimal); 
+        console.log(minus); 
+        
+        //string
+        let name = "ijaz shafarin"; 
+        let salam = 'assalamualaikum wr.wb'; 
+        console.log(salam); 
+
+        //boolean
+        let perempuan = true; 
+        let laki = false; 
+        console.log(laki); 
+        console.log(perempuan); 
+        //null
+        let nulls = null; 
+        console.log(nulls); 
+        //array
+        let fruit = ["pisang", "apel"]; 
+        console.log(fruit); 
+        console.log("tarik boss" + fruit[1]); 
+        fruit[0] = "ACEPP"; 
+        console.log(fruit[0]); 
+
+        //destructing array
+        let lemari = [
+            ["gelang", "kalung", "cincin"],
+            ["kemeja", "baju", "celana"]
+        ]; 
+        let [perhiasan, pakaian] = lemari; 
+        console.log(perhiasan); 
+        console.log(pakaian); 
+
+        //typeof
+        console.log(typeof laki); 
+    </script> <!-- Penutup skrip JavaScript -->
+</body> <!-- Penutup bagian tubuh dokumen HTML -->
+</html> <!-- Penutup elemen HTML -->
+
+
+
+
+
+
+
+
+
+//BUAT FILE operatorJS.html
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML -->
+<html lang="en"> <!-- Mulai elemen HTML, dengan atribut bahasa "en" (Inggris) -->
+<head>
+    <meta charset="UTF-8"> <!-- Deklarasi karakter set UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan tampilan untuk perangkat seluler -->
+    <title>Document</title> <!-- Judul halaman web -->
+</head>
+<body> <!-- Mulai bagian tubuh dokumen HTML -->
+    <h1>Belajar JavaScript Operator</h1> <!-- Elemen h1 -->
+    <script>
+        let num; 
+        num = -99; 
+        console.log(num); 
+
+        num = +99; 
+        console.log(num); 
+
+        num = 1 + 3; 
+        console.log(num);
+
+        num = 2 * 10000; 
+        console.log(num); 
+
+        num = 2/5000000000; 
+        console.log(num); 
+
+        num = 6**2; 
+        console.log(num); 
+
+        num = 8+9/2*100; 
+        console.log(num); 
+
+        num = 8%2; 
+        console.log(num); 
+
+
+        // incremental dan decremental
+
+        let val; 
+        val = 2; 
+        val++; 
+        console.log(val); 
+        val = 2; 
+        //decrement
+
+        val--; 
+        console.log(val); 
+
+        // spread operator
+
+        let Namamu = ["agus", "budi", "rudi"]; 
+        let seperti = ["harimau", "macan", "ular"]; 
+        let kumpul = [...Namamu,...seperti, "check"];
+        console.log(Namamu); 
+        console.log(seperti); 
+        console.log(kumpul); 
+        let orang = {
+            nama: "ijaz",
+            nim: "1203220147", };
+        
+    </script> <!-- Penutup skrip JavaScript -->
+</body> <!-- Penutup bagian tubuh dokumen HTML -->
+</html> <!-- Penutup elemen HTML -->
+
+
+
+
+
+
+
+
+
+
+
+//BUAT FILE logicJS.html
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML -->
+<html lang="id"> <!-- Mulai elemen HTML, dengan atribut bahasa "id" (Indonesia) -->
+<head>
+    <meta charset="utf-8" /> <!-- Deklarasi karakter set UTF-8 -->
+    <title>Belajar JavaScript: Logic</title> <!-- Judul halaman web -->
+</head>
+<body>
+    <h1>Belajar JavaScript: Logic</h1> <!-- Elemen h1 -->
+    <script>
+      // IF
+      let user = "admin";
+      if (user === "admin") {
+        console.log("Selamat datang admin...");
+      }
+
+      // IF ELSE
+      let hari = "selasa";
+
+      if (hari === "senin") {
+        console.log("Saatnya kerja...");
+      } else {
+        console.log("Bukan hari senin...");
+      }
+
+      // SWITCH
+      let nilai = 6;
+
+      switch (nilai) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+          console.log("Selama ini ngapain aja bro?");
+          break;
+        case 6:
+        case 7:
+        case 8:
+          console.log("Belajar lebih giat lagi!");
+          break;
+        case 9:
+        case 10:
+          console.log("Pertahankan!");
+          break;
+        default:
+          console.log("Masukkan angka 1 - 10");
+      }
+
+      // FOR
+      for (let i = 100; i >= 0; i = i - 5) {
+        console.log(i + " * 5 = " + i * 5);
+      }
+
+      // Menampilkan Array
+      let siswa = ["Andri", "Joko", "Sukma", "Rina", "Sari"];
+
+      for (let i = 0; i < 5; i++) {
+        console.log(siswa[i]);
+      }
+
+      // Array Length
+      let murid = ["Andri", "Joko", "Sukma", "Rina", "Sari"];
+      let jumlah_murid = murid.length;
+
+      console.log("Jumlah murid = " + jumlah_murid);
+
+      for (let i = 0; i < jumlah_murid; i++) {
+        console.log(murid[i]);
+      }
+
+      // FOR OF ARRAY
+      let siswas = ["Andri", "Joko", "Sukma", "Rina", "Sari"];
+
+      for (let i of siswas) {
+        console.log(i);
+      }
+    </script> <!-- Penutup skrip JavaScript -->
+  </body> <!-- Penutup bagian tubuh dokumen HTML -->
+</html> <!-- Penutup elemen HTML -->
+
+
+
+
+
+
+
+
+
+
+
+// BUAT FILE functionjs.html
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML -->
+<html lang="id"> <!-- Mulai elemen HTML, dengan atribut bahasa "id" (Indonesia) -->
+<head>
+    <meta charset="utf-8" /> <!-- Deklarasi karakter set UTF-8 -->
+    <title>Belajar JavaScript: Function</title> <!-- Judul halaman web -->
+</head>
+<body>
+    <h1>Belajar JavaScript: Function</h1> <!-- Elemen h1 -->
+    <script>
+      // Calling Function
+      function pagi() {
+        console.log("Selamat Pagi");
+        console.log("Good Morning");
+        console.log("Ohayou Gozaimasu");
+        console.log("Buenos Dias");
+      }
+      pagi();
+      pagi();
+      pagi();
+
+      // Return Value
+      function pagi() {
+        return "Semangat Pagi";
+      }
+      let salam = pagi();
+      console.log(salam); // "Semangat Pagi"
+
+      // Parameter & Argument;
+      function pagi(siapa) {
+        return "Semangat Pagi " + siapa;
+      }
+      console.log(pagi("Budi")); // Semangat Pagi Budi
+      console.log(pagi("Joko")); // Semangat Pagi Joko
+      console.log(pagi("Sari")); // Semangat Pagi Sari
+
+      // Default Parameter
+      function rata2(a = 10, b = 10, c = 10, d = 10) {
+        let hasil = (a + b + c + d) / 4;
+        return hasil;
+      }
+      let nilai1 = rata2();
+      console.log(nilai1); // 10
+      let nilai2 = rata2(20);
+      console.log(nilai2); // 12.5
+      let nilai3 = rata2(20, 5, 30);
+      console.log(nilai3); // 16.25
+
+      // Normal Function
+      function kuadrat(a) {
+        return a * a;
+      }
+      console.log(kuadrat(5)); // 25
+
+      // Const Function
+      const kuadrat2 = function (a) {
+        return a * a;
+      };
+      console.log(kuadrat2(5)); // 25
+
+      // Arrow Function
+      const kuadrat3 = (a) => {
+        return a * a;
+      };
+      console.log(kuadrat3(5)); // 25
+
+      // Arrow Function
+      const kuadrat4 = (a) => a * a;
+      console.log(kuadrat4(5)); // 25
+
+      // Arrow Function
+      const kuadrat5 = (a) => a * a;
+      console.log(kuadrat5(5)); // 25
+
+      // Arrow Function
+      const greeting = () => "Semangat Pagi";
+      console.log(greeting()); // Semangat Pagi
+
+      // Arrow Function
+      const greeting2 = (kapan, siapa) => `Selamat ${kapan}, ${siapa}`;
+      console.log(greeting2("Pagi", "Budi")); // Selamat Pagi, Budi
+
+      // Arrow Function
+      const greeting3 = (kapan = "Pagi", siapa = "Kawan") =>
+        `Selamat ${kapan}, ${siapa}`;
+
+      console.log(greeting3()); //  Selamat Pagi, Kawan
+      console.log(greeting3("Sore")); //  Selamat Sore, Kawan
+      console.log(greeting3("Malam", "Budi")); //  Selamat Malam, Budi
+    </script> <!-- Penutup skrip JavaScript -->
+  </body> <!-- Penutup bagian tubuh dokumen HTML -->
+</html> <!-- Penutup elemen HTML -->
